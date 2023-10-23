@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Falcor, and the Matrix</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+    <p>
+      
+    <p id="numdot"> XXX </p>
+    Falcor discovers fantasia is a part of the martix.
+    <p>  
+    Click and drag 360 degree camera.
+    <p>
+    Use WASD keys to move around, and QE keys to pan left and right.
+    <p>
+    Use Z to place Block and X to break block.    
+    <p>
+    <button type="button" id="falcorOn">Spawn Falcor</button>
+    <button type="button" id="falcorOff">UnSpawn Falcor</button>
+    <p>
+    Animate Falcor 
+    <p>
+    <button type="button" id="animationOnButton">ON</button>
+    <button type="button" id="animationOffButton">OFF</button>
+    <p>
+
+        
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix-cse160.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Falcor.js"></script>
+    <script src="Camera.js"></script>
+    <script src="World.js"></script>
+  </body>
+</html>
