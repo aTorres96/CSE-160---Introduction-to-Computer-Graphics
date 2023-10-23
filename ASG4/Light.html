@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Falcor, and the Matrix</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+    <p>
+      
+    <p id="numdot"> XXX </p>
+    La Luz
+    <p>
+    Use WASD keys to move around, and QE keys to pan left and right.
+    <p>
+    <button type="button" id="normalOn">Normal On</button>
+    <button type="button" id="normalOff">Normal Off</button>
+    <p>
+    <label for="lightx">Light X</label>
+    <input type="range" id="lightx" name="lightx" min="-375" max="375" value="0" class = "slider">
+    <label for="lighty">Light Y</label>
+    <input type="range" id="lighty" name="lighty" min="1" max="250" value="100" class = "slider"><br>
+    <label for="lightz">Light Z</label>
+    <input type="range" id="lightz" name="lightz" min="-400" max="250" value="100" class = "slider"><br>
+    <p>
+    RGB elements of the light:
+    <p>
+    Red <input type="range" min="1" max="255" value='255' class="slider" id="redSlide">
+    <p>
+    Green <input type="range" min="1" max="255" value='255' class="slider" id="greenSlide">
+    <p>
+    Blue <input type="range" min="1" max="255" value='255' class="slider" id="blueSlide">
+    <p>
+    Animate Falcor 
+    <p>
+    <button type="button" id="animationOnButton">ON</button>
+    <button type="button" id="animationOffButton">OFF</button>
+    <p>
+    <label for="light_on">Light: </label>
+    <button type="button" id="light_on">ON</button>
+    <button type="button" id="light_off">OFF</button><br>
+        
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix-cse160.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Falcor.js"></script>
+    <script src="Camera.js"></script>
+    <script src="Sphere.js"></script>
+    <script src="Light.js"></script>
+  </body>
+</html>
